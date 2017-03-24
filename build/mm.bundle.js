@@ -9021,7 +9021,7 @@ angular.module('mm.core')
             src: '='
         },
         link: function(scope, element, attrs) {
-            var url = (scope.src && scope.src.toString()) || '', 
+            var url = (scope.src && scope.src.toString()) || '',
                 iframe = angular.element(element.find('iframe')[0]);
             scope.width = $mmUtil.formatPixelsSize(attrs.iframeWidth) || '100%';
             scope.height = $mmUtil.formatPixelsSize(attrs.iframeHeight) || '100%';
@@ -9686,8 +9686,8 @@ angular.module('mm.core')
         priority: 500,
         compile: function(el, attrs) {
             attrs.$set('type',
-                null,               
-                false               
+                null,
+                false
             );
         }
     }
@@ -10601,7 +10601,7 @@ angular.module('mm.core.contentlinks', [])
         url: '/mm_contentlinks',
         abstract: true,
         templateUrl: 'core/components/contentlinks/templates/base.html',
-        cache: false,  
+        cache: false,
     })
     .state('mm_contentlinks.choosesite', {
         url: '/choosesite',
@@ -10819,7 +10819,7 @@ angular.module('mm.core.login', [])
         url: '/mm_login',
         abstract: true,
         templateUrl: 'core/components/login/templates/base.html',
-        cache: false,  
+        cache: false,
         onEnter: ["$ionicHistory", function($ionicHistory) {
             $ionicHistory.clearHistory();
         }]
@@ -10843,7 +10843,9 @@ angular.module('mm.core.login', [])
     .state('mm_login.site', {
         url: '/site',
         templateUrl: 'core/components/login/templates/site.html',
-        controller: 'mmLoginSiteCtrl'
+        controller: 'mmLoginSiteCtrl',
+        onEnter: function($state) {
+        $state.go('mm_login.credentials', {siteurl: 'http://www.financialiteracy.ac.ug'});
     })
     .state('mm_login.credentials', {
         url: '/cred',
@@ -39411,8 +39413,8 @@ angular.module('mm.addons.mod_glossary')
         limitNum = mmaModGlossaryLimitEntriesNum,
         popover,
         popoverScope,
-        viewMode,  
-        fetchMode,      
+        viewMode,
+        fetchMode,
         fetchFunction,
         fetchInvalidate,
         fetchArguments,
@@ -44907,7 +44909,7 @@ angular.module('mm.addons.mod_resource')
 .directive('mmaModResourceHtmlLink', function() {
     return {
         restrict: 'A',
-        priority: 99,  
+        priority: 99,
         link: function(scope, element, attrs) {
             element.on('click', function(event) {
                 var href = element[0].getAttribute('data-href');
@@ -46048,7 +46050,7 @@ angular.module('mm.addons.mod_scorm')
             var cFirst = sFirst[2].split(".");
             var cSecond = sSecond[2].split(".");
             var change = 0;
-            FirstCents = 0; 
+            FirstCents = 0;
             if (cFirst.length > 1) {
                 FirstCents = parseInt(cFirst[1],10);
             }
@@ -46062,19 +46064,19 @@ angular.module('mm.addons.mod_scorm')
             if (Math.floor(cents) < 10) {
                 cents = "0" + cents.toString();
             }
-            var secs = parseInt(cFirst[0],10) + parseInt(cSecond[0],10) + change; 
+            var secs = parseInt(cFirst[0],10) + parseInt(cSecond[0],10) + change;
             change = Math.floor(secs / 60);
             secs = secs - (change * 60);
             if (Math.floor(secs) < 10) {
                 secs = "0" + secs.toString();
             }
-            mins = parseInt(sFirst[1],10) + parseInt(sSecond[1],10) + change;  
+            mins = parseInt(sFirst[1],10) + parseInt(sSecond[1],10) + change;
             change = Math.floor(mins / 60);
             mins = mins - (change * 60);
             if (mins < 10) {
                 mins = "0" + mins.toString();
             }
-            hours = parseInt(sFirst[0],10) + parseInt(sSecond[0],10) + change; 
+            hours = parseInt(sFirst[0],10) + parseInt(sSecond[0],10) + change;
             if (hours < 10) {
                 hours = "0" + hours.toString();
             }
@@ -47188,7 +47190,7 @@ angular.module('mm.addons.mod_scorm')
                     score = attemptscore.scos;
                 break;
                 default:
-                    score = attemptscore.max;  
+                    score = attemptscore.max;
             }
             return score;
         });
