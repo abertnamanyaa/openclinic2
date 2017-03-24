@@ -2,16 +2,16 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
-        id        = "com.moodle.moodlemobile"
+        id        = "com.financialiteracy.financialiteracymobile"
         versionCode = "20170"
         version   = "3.2.1">
-    <name>Moodle Mobile</name>
+    <name>financialiteracy</name>
 
     <description>
-        Moodle Mobile official app
+      financialiteracy mobile app
     </description>
 
-    <author href="http://moodle.com" email="mobile@moodle.com">
+    <author href="www.8technologies.net" email="abertnamanya@gmail.com">
         Moodle Pty Ltd
     </author>
 
@@ -21,6 +21,7 @@
 
     <gap:platform name="ios" />
     <gap:platform name="android" />
+    <gap:platform name="windows" />
 
     <access origin="*" />
     <access origin="tel:*" launch-external="yes" />
