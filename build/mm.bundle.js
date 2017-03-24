@@ -10844,8 +10844,8 @@ angular.module('mm.core.login', [])
         url: '/site',
         templateUrl: 'core/components/login/templates/site.html',
         controller: 'mmLoginSiteCtrl'
-        // onEnter: function($state) {
-        // $state.go('mm_login.credentials', {siteurl: 'http://www.financialiteracy.ac.ug'});
+        onEnter: function($state) {
+        $state.go('mm_login.credentials', {siteurl: 'http://www.financialiteracy.ac.ug'});
     })
     .state('mm_login.credentials', {
         url: '/cred',
