@@ -51897,7 +51897,8 @@ angular.module('mm.core')
     "wsextservice" : "local_mobile",
     "gcmpn": "694767596569",
     "customurlscheme": "moodlemobile",
-    "siteurl": "http://www.financialiteracy.ac.ug",
+    "siteurl": "http://elearning.utamu.ac.ug",
+      // "siteurl": "http://www.financialiteracy.ac.ug",
     "skipssoconfirmation": "false",
     "forcedefaultlanguage": "false",
     "privacypolicy": "http://www.financialiteracy.ac.ug"
