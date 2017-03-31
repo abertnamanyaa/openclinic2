@@ -1,7 +1,7 @@
 {
     "app_id" : "com.financialiteracy.financialiteracymobile",
     "appname": "financialiteracy",
-    "versioncode" : "2017",
+    "versioncode" : "1.0",
     "versionname" : "1.0",
     "cache_expiration_time" : 300000,
     "default_lang" : "en",

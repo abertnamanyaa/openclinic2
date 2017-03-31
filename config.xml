@@ -3,7 +3,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
         id        = "com.financialiteracy.financialiteracymobile"
-        versionCode = "20170"
+        versionCode = "1.0"
         version   = "1.0">
     <name>financialiteracy</name>
 
