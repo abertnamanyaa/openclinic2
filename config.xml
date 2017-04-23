@@ -5,7 +5,7 @@
         id        = "info.openclinic"
         versionCode = "1"
           version   = "1.0">
-    <name>OPenClinic</name>
+    <name>OpenClinic</name>
 
     <description>
       OpenClinic mobile app
