@@ -569,7 +569,7 @@
     "mm.login.invalidvaluemin": "The minimum value is {{$a}}",
     "mm.login.localmobileunexpectedresponse": "Moodle Mobile Additional Features check returned an unexpected response, you will be authenticated using the standard Mobile service.",
     "mm.login.loggedoutssodescription": "You have to authenticate again. You need to log in to the site in a browser window.",
-    "mm.login.login": "Financialiteracy",
+    "mm.login.login": "OpenClinic",
     "mm.login.loginbutton": "Log in",
     "mm.login.logininsiterequired": "You need to log in to the site in a browser window.",
     "mm.login.loginsteps": "For full access to this site, you first need to create an account.",

@@ -10845,7 +10845,7 @@ angular.module('mm.core.login', [])
         templateUrl: 'core/components/login/templates/site.html',
         controller: 'mmLoginSiteCtrl'
       //  onEnter: function($state) {
-      //  $state.go('mm_login.credentials', {siteurl: 'http://www.financialiteracy.ac.ug'});
+      //  $state.go('mm_login.credentials', {siteurl: 'http://openclinic.info/moodle'});
     })
     .state('mm_login.credentials', {
         url: '/cred',
@@ -51897,10 +51897,9 @@ angular.module('mm.core')
     "wsextservice" : "local_mobile",
     "gcmpn": "694767596569",
     "customurlscheme": "moodlemobile",
-    //"siteurl": "http://elearning.utamu.ac.ug",
-    "siteurl": "http://www.financialiteracy.ac.ug",
+    "siteurl": "http://openclinic.info/moodle",
     "skipssoconfirmation": "false",
     "forcedefaultlanguage": "false",
-    "privacypolicy": "http://www.financialiteracy.ac.ug"
+    "privacypolicy": "http://openclinic.info/moodle"
 }
 );
